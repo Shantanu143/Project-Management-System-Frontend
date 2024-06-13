@@ -33,7 +33,9 @@ const IssueList: FC<IssueListProps> = ({ title, status }) => {
 
           <CardContent className="px-2">
             <div className="space-y-2">
-              <IssueCard />
+              {[1, 1, 1, 1, 1].map((item) => (
+                <IssueCard key={item} />
+              ))}
             </div>
           </CardContent>
 

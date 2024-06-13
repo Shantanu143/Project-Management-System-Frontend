@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 import ProjectCard from "../Project/ProjectCard";
 
- export const tags: string[] = [
+export const tags: string[] = [
   "all",
   "react",
   "nextjs",
@@ -37,7 +37,7 @@ const ProjectList = () => {
 
   return (
     <>
-      <div className="relative px-5 lg:px-0 gap-5 justify-center py-5">
+      <div className="relative px-5 lg:px-0 gap-5 flex justify-center py-5">
         <section className="filterSection">
           <Card className="p-5 sticky top-10">
             <div className="flex justify-between lg:w-[20rem]">

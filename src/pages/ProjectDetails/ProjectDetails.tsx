@@ -9,10 +9,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { PlusIcon } from "@radix-ui/react-icons";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
 import InviteUser from "./InviteUser";
 import IssueList from "./IssueList";
 import ChatBox from "./ChatBox";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const ProjectDetails = () => {
   const handleProjectInvitation = () => {
@@ -79,18 +79,21 @@ const ProjectDetails = () => {
               </div>
 
               <section>
+                
                 <p className="py-5 border-b text-lg -tracking-wider">Tasks</p>
-
-                <div className="lg:flex md:flex gap-3 justify-between py-5">
+                <div className="lg:flex md:flex gap-3 justify-between py-5 ">
                   <IssueList status="pending" title="Todo List" />
                   <IssueList status="in_progress" title="In Progress" />
                   <IssueList status="done" title="Done" />
                 </div>
+            
               </section>
+
             </div>
+
           </ScrollArea>
-          <div>
-            <ChatBox />
+          <div className="lg:w-[30%] rounded-md sticky right-5 top-10">
+            <ChatBox /> 
           </div>
         </div>
       </div>
